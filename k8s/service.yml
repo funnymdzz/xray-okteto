@@ -8,6 +8,6 @@ spec:
   type: ClusterIP  
   ports:
   - name: "xray-okteto"
-    port: 8080
+    port: 443
   selector:
     app: xray-okteto
