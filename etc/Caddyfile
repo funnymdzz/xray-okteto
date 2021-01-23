@@ -1,4 +1,4 @@
-:$PORT
+:8080
 root * /usr/share/caddy
 file_server browse
 
