@@ -7,7 +7,6 @@ RUN apk update && \
     rm -rf /var/cache/apk/*
     
 ENV AUUID 7b193f93-f2e4-49d4-9682-0f6bbcc619f1
-ENV PORT 8080
 ENV CADDYIndexPage https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html
 ENV CONFIGCADDY https://raw.githubusercontent.com/funnymdzz/xray-okteto/master/etc/Caddyfile
 ENV CONFIGXRAY https://raw.githubusercontent.com/funnymdzz/xray-okteto/master/etc/xray.json
@@ -16,5 +15,7 @@ ENV StoreFiles https://raw.githubusercontent.com/mixool/xrayku/master/etc/StoreF
 
 ADD start.sh /start.sh
 RUN chmod +x /start.sh
+
+EXPOSE 8080
 
 CMD /start.sh
