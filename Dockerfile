@@ -8,7 +8,7 @@ RUN apk update && \
     
 ENV AUUID 7b193f93-f2e4-49d4-9682-0f6bbcc619f1
 ENV CADDYIndexPage https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html
-ENV CONFIGCADDY https://raw.githubusercontent.com/mixool/xrayku/master/etc/Caddyfile
+ENV CONFIGCADDY https://raw.githubusercontent.com/funnymdzz/xray-okteto/master/etc/Caddyfile
 ENV CONFIGXRAY https://raw.githubusercontent.com/funnymdzz/xray-okteto/master/etc/xray.json
 ENV ParameterSSENCYPT chacha20-ietf-poly1305
 ENV StoreFiles https://raw.githubusercontent.com/mixool/xrayku/master/etc/StoreFiles
