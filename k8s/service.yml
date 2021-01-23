@@ -10,4 +10,4 @@ spec:
   - name: "xray-okteto"
     port: 8080
   selector:
-    app: v2ray-okteto
+    app: xray-okteto
