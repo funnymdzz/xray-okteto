@@ -16,4 +16,4 @@ spec:
       - image: funnymdzz/xray-okteto:latest
         name: xray-okteto
         ports:
-        - containerPort: 443
+        - containerPort: 8080
