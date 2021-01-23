@@ -5,6 +5,7 @@ RUN apk update && \
     wget -qO- https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip | busybox unzip - && \
     chmod +x /xray && \
     rm -rf /var/cache/apk/*
+    
 ENV AUUID 7b193f93-f2e4-49d4-9682-0f6bbcc619f1
 ENV CADDYIndexPage https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html
 ENV CONFIGCADDY https://raw.githubusercontent.com/mixool/xrayku/master/etc/Caddyfile
