@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: v2ray-okteto
+  name: xray-okteto
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: v2ray-okteto
+      app: xray-okteto
   template:
     metadata:
       labels:
-        app: v2ray-okteto
+        app: xray-okteto
     spec:
       containers:
-      - image: funnymdzz/v2teto:latest
-        name: v2ray-okteto
+      - image: funnymdzz/xray-okteto:latest
+        name: xray-okteto
         ports:
         - containerPort: 8080
